@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+}
+body {
+  box-sizing: border-box;
+  display: flex;
+  font-family: "roboto";
+}
+
+.titulo {
+  width: 100%;
+  font-size: 25px;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.titulo-menu2 {
+  display: flex;
+  justify-content: center;
+}
+.titulo-menu2 a {
+  text-decoration: none;
+  color: black;
+}
+.titulo-menu1 {
+  width: 100%;
+  font-weight: 700;
+}
+.titulo-menu2 button {
+  height: 40px;
+  margin: 5px;
+  font-size: large;
+  border: none;
+  background-color: orange;
+  text-decoration: none;
+}
+.titulo-menu2 button:hover {
+  background-color: rgb(167, 120, 34);
+  cursor: pointer;
+}
+.container {
+  margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.container-meio {
+  width: 450px;
+  height: 280px;
+  margin: 20px;
+}
+#fachada_interna {
+  width: 100%;
+  height: 100%;
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+  .container {
+    display: block;
+  }
+}

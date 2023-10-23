@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+}
+body {
+  box-sizing: border-box;
+  display: flex;
+  font-family: "roboto";
+}
+nav {
+  width: 100%;
+}
+nav button {
+  font-size: large;
+  width: 50px;
+  height: 40px;
+  margin: 3px;
+  padding: 5px;
+  background-color: orange;
+  border: none;
+}
+nav button:hover {
+  background-color: rgb(158, 113, 47);
+}
+header {
+  margin-top: 15px;
+  font-size: 25px;
+  width: 100%;
+  height: 80px;
+  text-align: center;
+}
+.central-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.cards {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 10px;
+  background-color: rgb(233, 233, 233);
+  width: 320px;
+  white-space: nowrap;
+}
+.cards:hover {
+  cursor: pointer;
+  background-color: rgb(200, 200, 200);
+}
+.card-1 {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  font-size: larger;
+  justify-content: center;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.card-1-esquerda {
+  height: 100%;
+  width: 30%;
+  white-space: nowrap;
+}
+.card-1-direita {
+  height: 100%;
+  width: 65%;
+}
+
+.card-2 {
+  justify-content: center;
+}

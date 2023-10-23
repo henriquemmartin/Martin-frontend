@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+}
+body {
+  box-sizing: border-box;
+  display: flex;
+  font-family: "roboto";
+}
+.container2 {
+  margin: 10px;
+  width: 100%;
+}
+
+h2 {
+  text-align: center;
+}
+
+.fonteMaior {
+  font-size: 18px;
+}
+.fonteMedio {
+  font-size: 16px;
+}
+.fonteMenor {
+  font-size: 13px;
+}
+.hidden {
+  visibility: hidden;
+}
+.visible {
+  visibility: visible;
+}
+.red {
+  color: red;
+  font-weight: 500;
+}
+.corPreta {
+  background-color: rgb(73, 73, 73);
+}
+.corCinza {
+  background-color: rgb(198, 198, 198);
+}
+.paragrafo {
+  background-color: rgb(244, 244, 244);
+  width: 500px;
+  margin: 20px;
+  padding: 10px;
+  font-size: large;
+}
+.paragrafo button {
+  align-items: center;
+  height: 40px;
+  width: 300px;
+}
+.google2 {
+  border-bottom: 1px solid gray;
+  padding: 10px;
+}
+.google {
+  padding: 5px;
+  cursor: pointer;
+  border-bottom: 1px solid gray;
+  width: 100%;
+  height: 50px;
+  display: flex;
+}
+.google:hover {
+  background-color: rgb(236, 236, 236);
+}
+.google_esquerda {
+  float: left;
+  width: 70%;
+}
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: large;
+
+  height: 600px;
+}
+
+#incorreta {
+  visibility: hidden;
+}
+button {
+  background-color: green;
+  font-size: medium;
+}
+#meuForm {
+  background-color: green;
+  font-size: medium;
+  height: 40px;
+  width: 150px;
+}
