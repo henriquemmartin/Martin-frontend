@@ -93,3 +93,17 @@ button {
   height: 40px;
   width: 150px;
 }
+.imagens {
+  width: 500px;
+}
+.centralizador {
+  text-align: center;
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+  .paragrafo {
+    width: 80%;
+  }
+  .imagens {
+    width: 300px;
+  }
+}

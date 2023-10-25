@@ -28,6 +28,7 @@ header {
   height: 80px;
   text-align: center;
 }
+
 .central-cards {
   display: flex;
   flex-wrap: wrap;
@@ -58,15 +59,18 @@ header {
 }
 
 .card-1-esquerda {
-  height: 100%;
-  width: 30%;
+  width: 20%;
   white-space: nowrap;
 }
 .card-1-direita {
-  height: 100%;
   width: 65%;
 }
 
 .card-2 {
   justify-content: center;
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+  .central-cards {
+    margin-top: 50px;
+  }
 }

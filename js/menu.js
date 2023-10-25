@@ -4,6 +4,7 @@ menuAparece1.classList = "visible";
 const avanca = document.getElementById("avanca");
 const reduz = document.getElementById("reduz");
 avanca.classList = "hidden";
+
 menuAparece2.addEventListener("click", function () {
   if (menuAparece1.classList == "visible") {
     menuAparece1.classList = "hidden";

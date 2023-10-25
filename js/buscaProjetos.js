@@ -112,8 +112,11 @@ function carrega(dados) {
       var cards = document.createElement("div");
       var nomeDaDiv = i;
       const card1 = document.createElement("div");
+      card1.classList = "card-1";
       const card1esquerda = document.createElement("div");
+      card1esquerda.classList = "card-1-esquerda";
       const card1direita = document.createElement("div");
+      card1direita.classList = "card-1-direita";
       const fachada = document.createElement("img");
       const humanizada = document.createElement("img");
       if (larguraSelecionada[i].vendas == 3) {
@@ -125,13 +128,26 @@ function carrega(dados) {
       }
 
       card1.appendChild(card1esquerda);
-      var descricao =
+
+      var areaTotal2 =
+        Number(larguraSelecionada[i].terreo) +
+        Number(larguraSelecionada[i].garagem) +
+        Number(larguraSelecionada[i].superior);
+      descricao =
+        "<b>" +
         larguraSelecionada[i].nome +
-        " " +
+        "</b> " +
         larguraSelecionada[i].largura +
         "x" +
-        larguraSelecionada[i].comprimento;
+        larguraSelecionada[i].comprimento +
+        "<br> Área: " +
+        areaTotal2 +
+        "m² - " +
+        larguraSelecionada[i].quartos +
+        " Quartos";
+
       card1direita.innerHTML = descricao;
+
       card1.appendChild(card1direita);
       cards.appendChild(card1);
       fachada.src = "../img/fachadas/" + larguraSelecionada[i]._id + ".png";

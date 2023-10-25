@@ -54,12 +54,11 @@
 }
 footer {
   width: 100%;
-  color: white;
-  background-color: black;
+
   text-align: center;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
-  .menuAparece {
-    display: none;
-  }
+  /* menuAparece1.classList = "hidden";
+  reduz.classList = "hidden";
+  avanca.classList = "visible"; */
 }
