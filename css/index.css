@@ -21,14 +21,22 @@ nav button {
 nav button:hover {
   background-color: rgb(158, 113, 47);
 }
-header {
-  margin-top: 15px;
+.header2 {
+  line-height: 50px;
+  margin-left: 5px;
   font-size: 25px;
   width: 100%;
-  height: 80px;
+  height: 200px;
   text-align: center;
 }
-
+.titulo_principal {
+  height: 50px;
+  font-weight: 700;
+  background-color: rgb(216, 216, 216);
+}
+.titulo_principal2 {
+  font-size: large;
+}
 .central-cards {
   display: flex;
   flex-wrap: wrap;
@@ -70,6 +78,20 @@ header {
   justify-content: center;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+  .header2 {
+    line-height: 50px;
+    font-size: 25px;
+    width: 100%;
+    height: 300px;
+    text-align: center;
+  }
+  .titulo_principal {
+    height: 100px;
+    background-color: orange;
+  }
+  .titulo_principal2 {
+    font-size: large;
+  }
   .central-cards {
     margin-top: 50px;
   }
