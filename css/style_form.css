@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+}
+body {
+  background-color: rgb(198, 198, 198);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+.corSelecionado {
+  background-color: orange;
+}
+.corSelecionado:hover {
+  background-color: rgb(211, 157, 58);
+}
+.corNaoSelecionado {
+  background-color: rgb(255, 255, 255);
+}
+.corNaoSelecionado:hover {
+  background-color: rgb(211, 157, 58);
+}
+.campos {
+  border: 0px solid;
+}
+button:hover {
+  background-color: #cd853d;
+}
+.corSelecionado {
+  background-color: orange;
+}
+.corSelecionado:hover {
+  background-color: rgb(211, 157, 58);
+}
+.corNaoSelecionado {
+  background-color: rgb(255, 255, 255);
+}
+.container_esquerda {
+  margin: 10px;
+  height: 100%;
+  width: 600px;
+}
+.container_esquerda button {
+  width: 195px;
+  height: 30px;
+  padding: 4px;
+  margin: 1px;
+  border: 2px solid;
+  border-radius: 2px;
+  font-size: medium;
+}
+.container_direita {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+  height: 100%;
+  width: 100px;
+}
+.container_direita button {
+  width: 100%;
+  margin: 1px;
+  border: 2px solid;
+  border-radius: 2px;
+  font-size: medium;
+  height: 60px;
+}
+.container {
+  height: 100%;
+}
+.topo {
+  background-color: aquamarine;
+  text-align: center;
+}
+.corpo {
+  padding: 0px;
+}
+label {
+  width: 100px;
+}
+.borda1 {
+  width: 300px;
+}
+#descricao {
+  font-size: 15px;
+  width: 400px;
+  height: 100px;
+  overflow-y: scroll;
+}
+.borda {
+  width: 400px;
+}
+.borda_errado {
+  border-color: red;
+  width: 400px;
+}
+.corpo a {
+  color: red;
+  font-size: medium;
+}
+.corpo select {
+  width: 100%;
+}
+.botao {
+  width: 100%;
+  height: 30px;
+}
+.corpo a {
+  visibility: hidden;
+}
+.corpo_errado {
+  visibility: visible !important;
+}

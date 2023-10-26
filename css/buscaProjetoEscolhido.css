@@ -40,6 +40,11 @@ body {
   background-color: rgb(167, 120, 34);
   cursor: pointer;
 }
+.container2 {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: larger;
+}
 .container {
   margin: 20px;
   display: flex;

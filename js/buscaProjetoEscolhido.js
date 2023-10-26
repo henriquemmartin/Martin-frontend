@@ -39,7 +39,7 @@ function escreverCaractere() {
 escreverCaractere();
 
 divDescricao2.innerHTML =
-  " <br>Quadro de Áreas: <br>Casa " +
+  " <br>Quadro de Áreas: <br><b>Casa " +
   matrizF.terreo +
   " m²<br> Garagem: " +
   matrizF.garagem +
@@ -47,7 +47,7 @@ divDescricao2.innerHTML =
   matrizF.gourmet +
   " m² <br>Pav. Superior: " +
   matrizF.superior +
-  " m² <br> Area Total " +
+  " m² <br> Area Total <b>" +
   areaTotal +
   " m² (sem Área Gourmet)";
 divDescricao3.innerHTML = matrizF.descricao;
