@@ -9,6 +9,10 @@ body {
 .container2 {
   margin: 10px;
   width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 800px;
 }
 
 h2 {
@@ -85,6 +89,10 @@ h2 {
 }
 button {
   background-color: green;
+  font-size: medium;
+}
+button:hover {
+  background-color: rgb(186, 222, 186);
   font-size: medium;
 }
 #meuForm {

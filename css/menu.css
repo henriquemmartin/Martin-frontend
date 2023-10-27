@@ -3,7 +3,7 @@
 
 .menu {
   font-family: "roboto";
-  background-color: orange;
+  background-color: rgb(224, 224, 224);
   height: 100vh;
   display: flex;
   max-width: 250px;
@@ -18,7 +18,7 @@
   white-space: nowrap;
 }
 .menu a:hover {
-  color: aliceblue;
+  color: orange;
 }
 
 .bt-menu-principal {
@@ -36,15 +36,16 @@
 }
 .bt-menu2 {
   padding: 5px;
-  background-color: chocolate;
+
   color: white;
 }
 .menuAparece1 {
   height: 100%;
   width: 85%;
+  background-color: orange;
 }
 .menuAparece2 {
-  background-color: chocolate;
+  background-color: orange;
   height: 100%;
   width: 15%;
   text-align: center;

@@ -29,13 +29,9 @@ nav button:hover {
   height: 200px;
   text-align: center;
 }
-.titulo_principal {
-  height: 50px;
-  font-weight: 700;
-  background-color: rgb(216, 216, 216);
-}
+
 .titulo_principal2 {
-  font-size: large;
+  font-size: 20px;
 }
 .central-cards {
   display: flex;
