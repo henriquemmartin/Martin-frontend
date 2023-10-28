@@ -53,10 +53,10 @@ function carrega(dados) {
     var nomeDaDiv = i;
     const card1 = document.createElement("div");
     card1.classList = "card-1";
-
     const card1esquerda = document.createElement("div");
     card1esquerda.classList = "card-1-esquerda";
     const card1direita = document.createElement("div");
+    card1direita.classList = "card-1-direita";
     const fachada = document.createElement("img");
     const humanizada = document.createElement("img");
     if (larguraSelecionada[i].vendas == 3) {
@@ -66,14 +66,28 @@ function carrega(dados) {
       estrela.style.height = "24px";
       card1esquerda.appendChild(estrela);
     }
+
     card1.appendChild(card1esquerda);
-    var descricao =
+
+    var areaTotal2 =
+      Number(larguraSelecionada[i].terreo) +
+      Number(larguraSelecionada[i].garagem) +
+      Number(larguraSelecionada[i].superior);
+    descricao =
+      "<b>" +
       larguraSelecionada[i].nome +
-      " " +
+      "</b> " +
       larguraSelecionada[i].largura +
       "x" +
-      larguraSelecionada[i].comprimento;
+      larguraSelecionada[i].comprimento +
+      "<br> Área: " +
+      areaTotal2 +
+      "m² - " +
+      larguraSelecionada[i].quartos +
+      " Quartos";
+
     card1direita.innerHTML = descricao;
+
     card1.appendChild(card1direita);
     cards.appendChild(card1);
     fachada.src = "../img/fachadas/" + larguraSelecionada[i]._id + ".png";
@@ -94,11 +108,11 @@ function carrega(dados) {
       "click",
       (function (nome) {
         return function () {
-          localStorage.setItem(
-            "projetoEscolhido",
-            JSON.stringify(larguraSelecionada[nome])
-          );
-          window.location = "../html/buscaProjetoEscolhido.html";
+          url2 =
+            "../html/buscaProjetoEscolhido.html?projeto=" +
+            larguraSelecionada[nome]._id;
+
+          window.location = url2;
         };
       })(nomeDaDiv)
     );
@@ -169,11 +183,11 @@ function carrega(dados) {
         "click",
         (function (nome) {
           return function () {
-            localStorage.setItem(
-              "projetoEscolhido",
-              JSON.stringify(larguraSelecionada[nome])
-            );
-            window.location = "../html/buscaProjetoEscolhido.html";
+            url2 =
+              "../html/buscaProjetoEscolhido.html?projeto=" +
+              larguraSelecionada[nome]._id;
+
+            window.location = url2;
           };
         })(nomeDaDiv)
       );
