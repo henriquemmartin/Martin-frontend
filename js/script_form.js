@@ -11,6 +11,7 @@ const descricao = document.getElementById("descricao");
 const vendas = document.getElementById("vendas");
 const linkv = document.getElementById("linkv");
 const btCriarNovo = document.getElementById("btCriarNovo");
+const btLimpar = document.getElementById("btLimpar");
 const listaCampo = document.getElementById("listaCampo");
 var valorEnviado = {};
 btCriarNovo.onclick = function () {
@@ -48,6 +49,21 @@ btCriarNovo.onclick = function () {
         console.error("Erro ao enviar os dados:", error);
       });
   }
+};
+btLimpar.onclick = function () {
+  id.value = "";
+  nome.value = "";
+  largura.value = "";
+  comprimento.value = "";
+  andares.value = "";
+  quartos.value = "";
+  terreo.value = "";
+  superior.value = "";
+  garagem.value = "";
+  gourmet.value = "";
+  descricao.value = "";
+  vendas.value = "";
+  linkv.value = "";
 };
 btAtualizar.onclick = function () {
   checagem();
@@ -124,6 +140,15 @@ function fetchAPI(URL) {
 }
 
 function carrega(dados) {
+  dados.sort((a, b) => {
+    if (a.nome < b.nome) {
+      return -1;
+    }
+    if (a.nome > b.nome) {
+      return 1;
+    }
+    return 0;
+  });
   contagem.innerText = "Total: " + dados.length + " Projetos";
   for (let i = 0; i < dados.length; i++) {
     var botao = document.createElement("button");
