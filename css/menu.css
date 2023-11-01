@@ -7,6 +7,7 @@
   height: 100vh;
   display: flex;
   max-width: 250px;
+  border-right: 3px solid orange;
 }
 .menu a {
   color: black;
@@ -20,7 +21,9 @@
 .menu a:hover {
   color: orange;
 }
-
+.menuAparece2 {
+  display: none;
+}
 .bt-menu-principal {
   color: black;
   font-size: large;
@@ -29,7 +32,6 @@
 
 .bt-menu0 {
   padding: 5px;
-  font-family: "Lobster", cursive;
 }
 .bt-menu {
   padding: 5px;
@@ -39,17 +41,7 @@
 
   color: white;
 }
-.menuAparece1 {
-  height: 100%;
-  width: 85%;
-  background-color: orange;
-}
-.menuAparece2 {
-  background-color: orange;
-  height: 100%;
-  width: 15%;
-  text-align: center;
-}
+
 .hidden {
   display: none;
 }
@@ -59,7 +51,15 @@ footer {
   text-align: center;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
-  /* menuAparece1.classList = "hidden";
-  reduz.classList = "hidden";
-  avanca.classList = "visible"; */
+  .menuAparece2 {
+    display: block;
+    margin-top: 80px;
+    margin-left: 5px;
+  }
+
+  .menu a {
+    display: none;
+  }
+  #menu3 {
+  }
 }

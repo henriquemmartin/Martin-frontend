@@ -1,18 +1,29 @@
 const menuAparece1 = document.getElementById("menuAparece1");
 const menuAparece2 = document.getElementById("menuAparece2");
-menuAparece1.classList = "visible";
-const avanca = document.getElementById("avanca");
-const reduz = document.getElementById("reduz");
-avanca.classList = "hidden";
+const menu3 = document.getElementById("menu3");
 
 menuAparece2.addEventListener("click", function () {
   if (menuAparece1.classList == "visible") {
-    menuAparece1.classList = "hidden";
-    reduz.classList = "hidden";
-    avanca.classList = "visible";
+    alert("ok");
   } else {
-    menuAparece1.classList = "visible";
-    reduz.classList = "visible";
-    avanca.classList = "hidden";
+    alert("ok");
+    menu3.style.background = "aquamarine";
   }
 });
+// .menuAparece2 {
+//   display: block;
+//   margin-top: 80px;
+//   margin-left: 5px;
+// }
+// .menu {
+//   width: 50px;
+// }
+// .menu a {
+//   display: none;
+// }
+// .bt-menu0 {
+//   display: none;
+// }
+// .bt-menu {
+//   display: none;
+// }
