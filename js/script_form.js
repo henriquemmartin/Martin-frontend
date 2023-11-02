@@ -14,8 +14,10 @@ const btCriarNovo = document.getElementById("btCriarNovo");
 const div_fachada = document.getElementById("div_fachada");
 const div_humanizada = document.getElementById("div_humanizada");
 const btLimpar = document.getElementById("btLimpar");
+const btCopiar = document.getElementById("btCopiar");
 const listaCampo = document.getElementById("listaCampo");
 var valorEnviado = {};
+var projetoLink = "";
 btCriarNovo.onclick = function () {
   checagem();
   if (form.querySelectorAll(".corpo_errado").length == 0) {
@@ -185,6 +187,8 @@ function carrega(dados) {
       descricao.value = dados[i].descricao;
       vendas.value = dados[i].vendas;
       linkv.value = dados[i].linkv;
+      var descrFinal =
+        dados[i].nome + " " + dados[i].largura + "x" + dados[i].comprimento;
       div_fachada.innerHTML = "";
       div_humanizada.innerHTML = "";
 
@@ -194,9 +198,19 @@ function carrega(dados) {
       humanizada_d.src = "../img/humanizadas/" + dados[i]._id + ".png";
       div_fachada.appendChild(fachada_d);
       div_fachada.appendChild(humanizada_d);
+      projetoLink =
+        "Conheça o projeto " +
+        descrFinal +
+        " clique no link: https://martinprojetos.up.railway.app/html/buscaProjetoEscolhido.html?projeto=" +
+        dados[i]._id;
     };
   }
 }
+btCopiar.onclick = function () {
+  navigator.clipboard.writeText(projetoLink).then(function () {
+    btCopiar.innerHTML = "Link Copiado!";
+  });
+};
 // id: id.value,
 //     nome: nome.value,
 //     largura: Number(largura.value),
