@@ -53,11 +53,15 @@ button:hover {
   font-size: medium;
 }
 .container_direita {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 10px;
+  background-color: #cd853d;
+  display: block;
+  margin: 30px;
+  padding: 30px;
   height: 100%;
-  width: 100px;
+  width: 200px;
+}
+.quadradinhos img {
+  width: 200px;
 }
 .container_direita button {
   width: 100%;

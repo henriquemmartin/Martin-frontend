@@ -11,6 +11,8 @@ const descricao = document.getElementById("descricao");
 const vendas = document.getElementById("vendas");
 const linkv = document.getElementById("linkv");
 const btCriarNovo = document.getElementById("btCriarNovo");
+const div_fachada = document.getElementById("div_fachada");
+const div_humanizada = document.getElementById("div_humanizada");
 const btLimpar = document.getElementById("btLimpar");
 const listaCampo = document.getElementById("listaCampo");
 var valorEnviado = {};
@@ -183,6 +185,15 @@ function carrega(dados) {
       descricao.value = dados[i].descricao;
       vendas.value = dados[i].vendas;
       linkv.value = dados[i].linkv;
+      div_fachada.innerHTML = "";
+      div_humanizada.innerHTML = "";
+
+      var fachada_d = document.createElement("img");
+      var humanizada_d = document.createElement("img");
+      fachada_d.src = "../img/fachadas/" + dados[i]._id + ".png";
+      humanizada_d.src = "../img/humanizadas/" + dados[i]._id + ".png";
+      div_fachada.appendChild(fachada_d);
+      div_fachada.appendChild(humanizada_d);
     };
   }
 }
