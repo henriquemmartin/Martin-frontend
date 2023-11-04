@@ -41,11 +41,11 @@ button:hover {
 .container_esquerda {
   margin: 10px;
   height: 100%;
-  width: 600px;
+  width: 1000px;
 }
 .container_esquerda button {
   width: 160px;
-  height: 30px;
+  height: 25px;
   padding: 4px;
   margin: 1px;
   border: 2px solid;
@@ -69,13 +69,12 @@ button:hover {
   border: 2px solid;
   border-radius: 2px;
   font-size: medium;
-  height: 60px;
+  height: 30px;
 }
 .container {
   height: 100%;
 }
 .topo {
-  background-color: aquamarine;
   text-align: center;
 }
 .corpo {
@@ -84,9 +83,7 @@ button:hover {
 label {
   width: 100px;
 }
-.borda1 {
-  width: 200px;
-}
+
 #descricao {
   font-size: 15px;
   width: 350px;
@@ -94,7 +91,7 @@ label {
   overflow-y: scroll;
 }
 .borda {
-  width: 400px;
+  width: 300px;
 }
 .borda_errado {
   border-color: red;

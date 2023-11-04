@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Midias</title>
+    <link rel="stylesheet" href="../css/midias.css" />
+  </head>
+  <body>
+    <div class="ladoDireito"></div>
+    <div class="meio"></div>
+    <div class="ladoEsquerdo"></div>
+  </body>
+  <script>
+    var projeto = getParameterByName("projeto");
+    function getParameterByName(name, url) {
+      if (!url) url = window.location.href;
+      name = name.replace(/[\[\]]/g, "\\$&");
+      var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+        results = regex.exec(url);
+      if (!results) return null;
+      if (!results[2]) return "";
+      return decodeURIComponent(results[2].replace(/\+/g, " "));
+    }
+  </script>
+</html>

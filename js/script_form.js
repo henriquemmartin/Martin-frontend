@@ -15,6 +15,7 @@ const div_fachada = document.getElementById("div_fachada");
 const div_humanizada = document.getElementById("div_humanizada");
 const btLimpar = document.getElementById("btLimpar");
 const btCopiar = document.getElementById("btCopiar");
+const btMidias = document.getElementById("btMidias");
 const listaCampo = document.getElementById("listaCampo");
 var valorEnviado = {};
 var projetoLink = "";
@@ -205,12 +206,23 @@ function carrega(dados) {
         dados[i]._id;
     };
   }
+  btMidias.addEventListener(
+    "click",
+    (function (nome) {
+      return function () {
+        url2 = "../html/midias.html?projeto=" + dados[nome]._id;
+
+        window.location = url2;
+      };
+    })(5)
+  );
 }
 btCopiar.onclick = function () {
   navigator.clipboard.writeText(projetoLink).then(function () {
     btCopiar.innerHTML = "Link Copiado!";
   });
 };
+
 // id: id.value,
 //     nome: nome.value,
 //     largura: Number(largura.value),
@@ -309,8 +321,5 @@ function correto(valor) {
   valor.className = "borda";
   vermelho.className = "corpo";
 }
-//servidor:
-//https://martinprojetos-development.up.railway.app/arquivo
-//DEV
-//http://localhost:3000/arquivo
+
 fetchAPI("https://martinprojetos-development.up.railway.app/arquivo");
