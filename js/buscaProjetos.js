@@ -43,6 +43,9 @@ function carrega(dados) {
   btLarguraS.innerText = "Mais Vendidos ✰";
   btLarguraS.style.width = "160px";
   divLargura.appendChild(btLarguraS);
+  btLarguraS.onclick = function () {
+    window.location = "index.html";
+  };
   var larguraSelecionada = [];
   //CRIA OS CARDS AO ENTRAR-----------------------------
   centralCards.innerText = "";

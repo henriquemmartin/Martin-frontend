@@ -204,19 +204,21 @@ function carrega(dados) {
         descrFinal +
         " clique no link: https://martinprojetos.up.railway.app/html/buscaProjetoEscolhido.html?projeto=" +
         dados[i]._id;
+      btMidias.addEventListener(
+        "click",
+        (function (nome) {
+          return function () {
+            url2 = "../html/midias.html?projeto=" + dados[nome]._id;
+            window.location = url2;
+          };
+        })(i)
+      );
     };
   }
-  btMidias.addEventListener(
-    "click",
-    (function (nome) {
-      return function () {
-        url2 = "../html/midias.html?projeto=" + dados[nome]._id;
-
-        window.location = url2;
-      };
-    })(5)
-  );
 }
+btDrive.onclick = function () {
+  alert("não disponivel ainda - Henrique");
+};
 btCopiar.onclick = function () {
   navigator.clipboard.writeText(projetoLink).then(function () {
     btCopiar.innerHTML = "Link Copiado!";
