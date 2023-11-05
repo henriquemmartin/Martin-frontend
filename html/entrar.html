@@ -8,109 +8,102 @@
     <title>Entrar</title>
   </head>
   <body>
-    <!-- AQUI COMEÇA O MENU-------------- -->
-    <div class="menu" id="menu">
-      <div class="menuAparece1" id="menuAparece1">
-        <br />
-        <br />
-        <br />
-        <br />
-        <div class="bt-menu0" id="bt-menu0">
-          <a href="../html/index.html"
-            ><img
-              src="../img/logo/logo sem fundo (claro).png"
-              height="100x"
-              alt=""
-          /></a>
-        </div>
-        <br />
-        <br />
-        <div class="bt-menu">
-          <a href="../html/index.html">Busca Projetos</a>
-        </div>
-        <div class="bt-menu">
-          <a href="../html/personalizados.html">Personalizado</a>
-        </div>
-        <div class="bt-menu">
-          <a href="../html/sejaParceiro.html">Seja Parceiro</a>
-        </div>
-        <div class="bt-menu">
-          <a href="../html/whyWe.html">Por quê nós?</a>
-        </div>
-        <div class="bt-menu">
-          <a href="../html/quemSomos.html">Quem somos?</a>
-        </div>
-        <div class="bt-menu"><a href="../html/contato.html">Contato</a></div>
-        <div class="bt-menu2"><a href="../html/entrar.html">Entrar</a></div>
-      </div>
-      <div class="menuAparece2" id="menuAparece2">
-        <br /><br /><br /><br /><br /><br /><br /><br /><br />
-        <img
-          src="../icons/arrow_back_ios_FILL0_wght400_GRAD0_opsz24.png"
-          alt=""
-          id="reduz"
-        />
-        <img
-          src="../icons/arrow_forward_ios_FILL0_wght400_GRAD0_opsz24.png"
-          alt=""
-          id="avanca"
-        />
-      </div>
-    </div>
-    <!-- AQUI TERMINA O MENU -->
-    <div class="paragrafo">
-      <h2>Acesso à todos os Projetos</h2>
-      <div class="login">
-        <div class="login2">
-          <div>Para ter acesso total, entre com Login e Senha!</div>
-          <br />
-          <form action="">
-            Usuário <input id="usuario" type="text" required /> Senha
-
-            <input id="senha" type="password" required />
+  <!-- AQUI COMEÇA O MENU-------------- -->
+  <header id="header">
+    <a id="logo" href="">Logo</a>
+    <navbar id="nav">
+      <button
+        aria-label="Abrir Menu"
+        id="btn-mobile"
+        aria-haspopup="true"
+        aria-controls="menu"
+        aria-expanded="false"
+      >
+        Menu
+        <span id="hamburger"></span>
+      </button>
+      <ul id="menu" role="menu">
+        <li><a href="../html/index.html">Pesquisar Projetos</a></li>
+        <li>
+          <a href="../html/personalizados.html">Projetos Personalizado</a>
+        </li>
+        <li><a href="../html/sejaParceiro.html">Seja Membro</a></li>
+        <li><a href="../html/whyWe.html">Por que nós?</a></li>
+        <li><a href="../html/quemSomos.html">Quem somos?</a></li>
+        <li><a href="../html/contato.html">Contato</a></li>
+        <li>
+          <a href="../html/entrar.html"><b>Fazer Login</b> </a>
+        </li>
+      </ul>
+    </navbar>
+  </header>
+  <!-- AQUI TERMINA O MENU -->
+    <div class="container2">
+      <div class="paragrafo">
+        <h2>Acesso à todos os Projetos</h2>
+        <div class="login">
+          <div class="login2">
+            <div>Para ter acesso total, entre com Login e Senha!</div>
             <br />
+            <form action="">
+              Usuário <input id="usuario" type="text" required /> Senha
+  
+              <input id="senha" type="password" required />
+              <br />
+              <br />
+              <input type="submit" id="meuForm" value="Acessar Todos os Projeto" />
+            </form>
             <br />
-            <input type="submit" id="meuForm" />
-          </form>
-          <br />
-          <div>
-            <a href="/acessoTotal.html"
-              ><u>Não tem acesso? Obter Acesso Total!</u>
-            </a>
+            <div>
+              <a href="/acessoTotal.html"
+                ><u>Não tem acesso? Obter Acesso Total!</u>
+              </a>
+            </div>
+            <div id="incorreta" class="red">Senha Incorreta</div>
           </div>
-          <div id="incorreta" class="red">Senha Incorreta</div>
         </div>
       </div>
-    </div>
-  </body>
-  <link
-    rel="stylesheet"
-    href="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-button.css"
-  />
-  <a
-    id="robbu-whatsapp-button"
-    class="right"
-    target="_blank"
-    href="https://api.whatsapp.com/send?phone=53981114135&text=Bom%20dia!%20vim%20do%20site%20do%20Martin!"
-  >
-    <div class="rwb-tooltip">Entre em Contato!</div>
-    <img
-      src="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-icon.svg"
+    </body>
+    <link
+      rel="stylesheet"
+      href="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-button.css"
     />
-  </a>
+    <a
+      id="robbu-whatsapp-button"
+      class="right"
+      target="_blank"
+      href="https://api.whatsapp.com/send?phone=53981114135&text=Bom%20dia!%20vim%20do%20site%20do%20Martin!"
+    >
+      <div class="rwb-tooltip">Entre em Contato!</div>
+      <img
+        src="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-icon.svg"
+      />
+    </a>
+
+
+    </div>
+
+    
   <script src="../js/menu.js"></script>
   <script>
     const btmeuform = document.getElementById("meuForm");
     const usuario = document.getElementById("usuario");
     const senha = document.getElementById("senha");
     btmeuform.onclick = function () {
-      if ((usuario.value == "thainara") & (senha.value == "silicone2014")) {
-        alert("aprovado");
+      if ((usuario.value == "henrique") & (senha.value == "martin")) {
         window.location = "./gerenciador_form.html";
+        alert("Login Aprovado!")
+      } else if ((usuario.value == "thainara") & (senha.value == "martin")){
+        window.location = "./gerenciador_form.html";
+        alert("Login Aprovado!")
+        
+      } else if ((usuario.value == "catia") & (senha.value == "martin")){
+        window.location = "./gerenciador_form.html";
+        alert("Login Aprovado!")
+        
       } else {
         document.getElementById("incorreta").classList.visibility = "visible";
       }
-      window.location = "./gerenciador_form.html";
     };
   </script>
 </html>
