@@ -43,6 +43,12 @@ a:hover {
 #btn-mobile {
   display: none;
 }
+footer {
+  color: white;
+  background-color: rgb(55, 55, 55);
+  text-align: center;
+  padding: 25px;
+}
 
 @media (max-width: 600px) {
   #menu {
