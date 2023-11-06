@@ -59,7 +59,7 @@ function carrega(dados) {
   btLarguraS.style.width = "160px";
   divLargura.appendChild(btLarguraS);
   btLarguraS.onclick = function () {
-    window.location = "index.html";
+    window.location = "../index.html";
   };
   var larguraSelecionada = [];
   //CRIA OS CARDS AO ENTRAR-----------------------------
