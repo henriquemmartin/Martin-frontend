@@ -14,13 +14,14 @@ nav button {
   height: 40px;
   margin: 3px;
   padding: 5px;
-  background-color: orange;
+
   border: none;
 }
 nav button:hover {
-  background-color: rgb(158, 113, 47);
+  background-color: orange;
 }
 .header2 {
+  background-color: white;
   line-height: 50px;
   margin-left: 5px;
   font-size: 25px;
@@ -30,8 +31,10 @@ nav button:hover {
 }
 
 .titulo_principal2 {
+  height: 50px;
   font-size: 20px;
 }
+
 .central-cards {
   display: flex;
   flex-wrap: wrap;
