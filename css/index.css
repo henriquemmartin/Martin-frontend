@@ -75,7 +75,7 @@ nav button:hover {
 .card-2 {
   justify-content: center;
 }
-@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+@media (max-width: 600px) {
   .header2 {
     line-height: 50px;
     font-size: 25px;
@@ -89,6 +89,7 @@ nav button:hover {
   }
   .titulo_principal2 {
     font-size: large;
+    height: 150px;
   }
   .central-cards {
     margin-top: 50px;
