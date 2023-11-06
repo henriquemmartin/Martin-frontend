@@ -114,3 +114,11 @@ label {
 .corpo_errado {
   visibility: visible !important;
 }
+@media (max-width: 600px) {
+  body {
+    display: block;
+  }
+  .container {
+    height: 1100px;
+  }
+}
