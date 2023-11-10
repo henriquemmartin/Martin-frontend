@@ -202,7 +202,7 @@ function carrega(dados) {
       projetoLink =
         "Conheça o projeto " +
         descrFinal +
-        " clique no link: https://martinprojetos.up.railway.app/html/buscaProjetoEscolhido.html?projeto=" +
+        " clique no link: https://martinprojetos.com/html/buscaProjetoEscolhido.html?projeto=" +
         dados[i]._id;
       btMidias.addEventListener(
         "click",
@@ -225,19 +225,7 @@ btCopiar.onclick = function () {
   });
 };
 
-// id: id.value,
-//     nome: nome.value,
-//     largura: Number(largura.value),
-//     comprimento: Number(comprimento.value),
-//     andares: Number(andares.value),
-//     quartos: Number(quartos.value),
-//     terreo: Number(terreo.value),
-//     superior: Number(superior.value),
-//     garagem: Number(garagem.value),
-//     gourmet: Number(gourmet.value),
-//     descricao: descricao.value,
-//     vendas: Number(vendas.value),
-//     linkv: linkv.value,
+
 function checagem() {
   if (nome.value === "") {
     errado(nome, "Campo Obrigatório");

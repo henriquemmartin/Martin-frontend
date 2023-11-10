@@ -3,6 +3,17 @@ ul {
   margin: 0px;
   padding: 0px;
 }
+header p {
+  margin-left: 20px;
+  color: aliceblue;
+}
+.logotipo{
+  margin-left: 100px;
+  display: flex;
+  align-items: center;
+  color: antiquewhite;
+  font-size: 30px;
+}
 
 a {
   color: black;
@@ -14,10 +25,6 @@ a:hover {
   background: rgba(0, 0, 0, 0.05);
 }
 
-#logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
 
 #header {
   box-sizing: border-box;
@@ -45,12 +52,22 @@ a:hover {
 }
 footer {
   color: white;
-  background-color: rgb(55, 55, 55);
+  background-color: black;
   text-align: center;
   padding: 25px;
+  width: 100%;
 }
-
+#nav{
+  font-size: medium;
+  margin-right: 30px;
+}
 @media (max-width: 600px) {
+  .logotipo{
+    margin-left: 20px;
+    display: flex;
+    color: antiquewhite;
+    font-size: 25px;
+  }
   #menu {
     display: block;
     position: absolute;
@@ -64,6 +81,7 @@ footer {
     visibility: hidden;
     overflow-y: hidden;
   }
+
   #nav.active #menu {
     height: calc(100vh - 70px);
     visibility: visible;

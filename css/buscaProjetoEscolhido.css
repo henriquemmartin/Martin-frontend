@@ -28,12 +28,17 @@ body {
   width: 100%;
   font-weight: 700;
 }
+.fonteMaior{
+  font-size:large
+}
+.fonteMenor{
+  font-size: 15px
+}
 .titulo-menu2 button {
   height: 40px;
   margin: 5px;
   font-size: large;
   border: none;
-  background-color: orange;
   text-decoration: none;
 }
 .titulo-menu2 button:hover {
@@ -57,10 +62,15 @@ body {
   width: 450px;
   height: 280px;
   margin: 20px;
+  background-position: center;
+  background-size: cover;
 }
 #fachada_interna {
   width: 100%;
   height: 100%;
+  background-position: center;
+  background-size: cover;
+
 }
 
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {

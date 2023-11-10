@@ -3,16 +3,24 @@
 }
 body {
   box-sizing: border-box;
-
   font-family: "roboto";
+  width: 100%;
+  justify-items: center;
+  
+  
+}
+.container2 a{
+  text-decoration: underline;
 }
 .container2 {
-  margin: 10px;
+  
+  text-align: justify;
+  margin: auto;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  max-width: 800px;
+  max-width: 1000px;
 }
 
 h2 {
@@ -41,6 +49,9 @@ h2 {
 .corPreta {
   background-color: rgb(73, 73, 73);
 }
+.video{
+  width: 480px;
+}
 .corCinza {
   background-color: rgb(198, 198, 198);
 }
@@ -48,7 +59,7 @@ h2 {
   background-color: rgb(244, 244, 244);
   width: 500px;
   margin: 20px;
-  padding: 10px;
+  padding: 30px;
   font-size: large;
 }
 .paragrafo button {
@@ -86,9 +97,7 @@ h2 {
   text-align: center;
 }
 
-#incorreta {
-  visibility: hidden;
-}
+
 button {
   background-color: green;
   font-size: medium;
@@ -109,7 +118,11 @@ button:hover {
 .centralizador {
   text-align: center;
 }
+
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+  .video{
+    width: 310px;
+  }
   .paragrafo {
     width: 80%;
   }
